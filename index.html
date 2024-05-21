@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lalafel Keyboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header>
-      <nav></nav>
-    </header>
-    <main>
-      <!-- This hero section for mobile -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalafell Keyboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="md:max-w-5xl mx-auto scroll-smooth">
+  <header class="md:fixed md:top-0 left-0 right-0 md:bg-white md:z-50">
+    <nav id="navbar" class="grid md:grid-cols-2 h-[100px] items-center mx-auto lg:w-[1024px]">
+      <a href="#" class="text-4xl font-bold ease-out duration-300 transform hover:scale-105 ml-4 md:ml-0">Lelafell
+        Keyboard</a>
+      <ul class="md:flex md:justify-end text-xl hidden">
+        <li class="mr-6 py-2 rounded-lg ease-out duration-300 transform hover:scale-105"><a href="#">Our Product</a>
+        </li>
+        <li class="mr-6 py-2 rounded-lg ease-out duration-300 transform hover:scale-105"><a href="#">Cart</a></li>
+        <li class="mr-6 py-2 rounded-lg ease-out duration-300 transform hover:scale-105"><a href="#">Contact Us</a></li>
+        <li class="rounded-lg ease-out duration-300 transform hover:scale-105">
+          <button class="bg-black text-white py-2 px-4 rounded-lg ease-out duration-300 transform hover:scale-105">Sign
+            In</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-4 md:mx-0">
+    <!-- This hero section for mobile -->
       <section class="container flex ]" id="mobile-hero">
         <div
           class="md:hidden flex container w-full h-full justify-center bg-[url('./Image/Hero_section/imageHero_1.png')] bg-no-repeat bg-cover p-11 text-center"
@@ -40,7 +55,36 @@
         <button class="bg-[#4E4E4E] rounded-md py-2 px-4 my-6 text-white font-[88px]" type="button" onclick="">Learn More</button>
       </div>
       </section>
-    </main>
-    <footer></footer>
-  </body>
+    <section id="our-products">
+      <h3 class="text-4xl font-semibold mb-8">Our Products</h3>
+      <div class="grid gap-8 md:grid-cols-[619px,1fr]">
+        <div class="mb-2 md:mb-0 ease-in">
+          <img
+            class="w-full h-[150px] rounded-lg md:w-[619px] md:h-[676px] md:mb-4 md:object-center object-cover duration-300 transform hover:scale-105"
+            src="./images/our-product keyboart.png" alt="keyboard">
+          <h3 class="text-2xl font-semibold hidden md:block">Keyboard</h3>
+          <p class="text-lg hidden md:block">Our customer Keyboard For you!</p>
+        </div>
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-1">
+          <div class="h-[100px]">
+            <img
+              class="w-full h-full rounded-lg md:w-[374px] md:h-[278px] md:mb-6 object-left object-cover duration-300 transform hover:scale-105"
+              src="./images/our-product keycap.png" alt="keycap">
+            <h3 class="text-2xl font-semibold hidden md:block">Keycap</h3>
+            <p class="text-lg hidden md:block">You Keyboard is too plain? try This.</p>
+          </div>
+          <div class="h-[100px]">
+            <img
+              class="w-full h-full rounded-lg md:w-[374px] md:h-[278px] mb-6 object-left object-cover duration-300 transform hover:scale-105"
+              src="./images/our-product switch.png" alt="switch">
+            <h3 class="text-2xl font-semibold hidden md:block">Switch</h3>
+            <p class="text-lg hidden md:block">For better feeling!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
+
+  
