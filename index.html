@@ -7,8 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
-    <body></body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <!-- This hero section for mobile -->
+      <section class="container flex ]" id="mobile-hero">
+        <div
+          class="md:hidden flex container w-full h-full justify-center bg-[url('./Image/Hero_section/imageHero_1.png')] bg-no-repeat bg-cover p-11 text-center"
+        >
+          <div>
+            <h1 class="text-[26px] font-semibold text-white pb-0">
+              Lalafel Keyboard
+            </h1>
+            <p class="text-white p-4">Lorem ipsum dolor sit amet.</p>
+            <button
+              type="button"
+              onclick=""
+              class="text-white bg-[#4E4E4E] px-4 py-2 rounded-md"
+            >
+              learn more
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- This hero section for mobile -->
+      <!-- This hero section for Desktop -->
+      <section class="md:flex hidden m-auto mx-auto items-center lg:justify-center" id="desktop-hero">
+      <div class="flex flex-col bg-[url('./Image/Hero_section/imageHero_1.png')] bg-no-repeat bg-cover lg:w-[1024px] lg:h-[419px] items-center justify-center rounded-lg " id="mainHero">
+        <h1 class="text-6xl text-white font-semibold py-6">Lalafel Keyboard</h1>
+        <p class="text-white text-2xl py-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, soluta.</p>
+        <button class="bg-[#4E4E4E] rounded-md py-2 px-4 my-6 text-white font-[88px]" type="button" onclick="">Learn More</button>
+      </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
