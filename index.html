@@ -159,6 +159,124 @@
         </div>
       </div>
     </section>
+    <hr class="border-gray-300 container mx-auto max-w-5xl" />
+    <footer
+      class="container mx-auto max-w-5xl flex items-center justify-between text-sm py-4"
+    >
+      <p class="flex-none text-gray-700 text-l">Lalafell Keyboard</p>
+      <nav class="flex flex-grow justify-end">
+        <ul class="flex flex-col text-gray-700 text-m">
+          <li class="mb-2">
+            <p class="font-bold">Email</p>
+            <a href="mailto:lalafel.keyboard@gmail.com" class="hover:underline"
+              >lalafel.keyboard@gmail.com</a
+            >
+          </li>
+          <li>
+            <p class="font-bold">Tel.</p>
+            <a href="tel:0123133331" class="hover:underline">0123133331</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ContactBtn -->
+    <div
+      id="contactBtn"
+      class="fixed bottom-5 right-5 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-500"
+    >
+      <span>💬</span>
+    </div>
+
+    <!--Form-->
+    <div
+      id="contactModal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div class="bg-white rounded-lg shadow-lg w-full max-w-md relative">
+        <h2
+          class="text-xl font-bold mb-4 text-center bg-black text-white p-4 rounded-t-lg"
+        >
+          Hello, How can we help you?
+        </h2>
+        <div class="p-6">
+          <span
+            class="close text-white hover:text-gray-500 text-2xl cursor-pointer absolute top-3 right-3"
+            >&times;</span
+          >
+          <form id="contactForm">
+            <label for="name" class="block text-l font-medium text-gray-700"
+              >Your name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+              class="mt-1 mb-4 p-2 border border-gray-300 rounded w-full"
+            />
+
+            <label for="email" class="block text-l font-medium text-gray-700"
+              >Email address:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+              class="mt-1 mb-4 p-2 border border-gray-300 rounded w-full"
+            />
+
+            <label for="message" class="block text-l font-medium text-gray-700"
+              >How can we help you?:</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              required
+              class="mt-1 mb-4 p-2 border border-gray-300 rounded w-full"
+            ></textarea>
+
+            <label for="file" class="block text-l font-medium text-gray-700"
+              >Attachments:</label
+            >
+            <input
+              type="file"
+              id="file"
+              name="file[]"
+              multiple
+              class="mt-1 mb-4 p-2 border border-gray-300 rounded w-full"
+            />
+
+            <button
+              type="submit"
+              class="px-4 py-2 mb-4 bg-black hover:bg-gray-500 text-white rounded float-right"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("contactModal");
+        var span = document.getElementsByClassName("close")[0];
+        var btn = document.getElementById("contactBtn");
+
+        btn.onclick = function () {
+          modal.classList.toggle("hidden");
+        };
+
+        span.onclick = function () {
+          modal.classList.add("hidden");
+        };
+      });
+
+    </script>
   </main>
 </body>
 </html>
